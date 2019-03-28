@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
 import os
+import sys
+
+sys.path.append(os.getcwd())
 import logging
 import alembic
 import alembic.config
