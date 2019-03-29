@@ -3,7 +3,7 @@
 
 from nose.tools import *
 from tests import prepare_database, with_database
-from acoustid.data.meta import insert_meta
+from acoustic.data.meta import insert_meta
 
 
 @with_database

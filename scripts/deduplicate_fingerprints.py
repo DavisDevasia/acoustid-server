@@ -7,9 +7,9 @@ import chromaprint
 import os
 import sys
 sys.path.append(os.getcwd())
-from acoustid.script import run_script
-from acoustid.data.track import find_duplicates
-from acoustid.data.fingerprint import FingerprintSearcher
+from acoustic.script import run_script
+from acoustic.data.track import find_duplicates
+from acoustic.data.fingerprint import FingerprintSearcher
 
 
 def main(script, opts, args):

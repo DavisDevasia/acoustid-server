@@ -7,9 +7,9 @@ import time
 import os
 import sys
 sys.path.append(os.getcwd())
-from acoustid.utils import call_internal_api
-from acoustid.script import run_script
-from acoustid.data.stats import update_lookup_stats
+from acoustic.utils import call_internal_api
+from acoustic.script import run_script
+from acoustic.data.stats import update_lookup_stats
 
 
 def main(script, opts, args):

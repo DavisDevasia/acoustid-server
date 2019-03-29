@@ -6,9 +6,9 @@
 import os
 import sys
 sys.path.append(os.getcwd())
-from acoustid.utils import call_internal_api
-from acoustid.script import run_script
-from acoustid.data.stats import update_user_agent_stats, unpack_user_agent_stats_key
+from acoustic.utils import call_internal_api
+from acoustic.script import run_script
+from acoustic.data.stats import update_user_agent_stats, unpack_user_agent_stats_key
 
 
 def main(script, opts, args):

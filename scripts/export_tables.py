@@ -11,8 +11,8 @@ import skytools
 import xml.etree.cElementTree as etree
 import psycopg2.extensions
 from contextlib import closing
-from acoustid.script import run_script
-from acoustid.data.track import merge_missing_mbids
+from acoustic.script import run_script
+from acoustic.data.track import merge_missing_mbids
 
 logger = logging.getLogger(__name__)
 

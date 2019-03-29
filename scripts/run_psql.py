@@ -6,7 +6,7 @@
 import os
 import sys
 sys.path.append(os.getcwd())
-from acoustid.script import run_script
+from acoustic.script import run_script
 
 
 def main(script, opts, args):

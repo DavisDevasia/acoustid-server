@@ -3,7 +3,7 @@
 
 from nose.tools import *
 from tests import prepare_database, with_database
-from acoustid.data.source import find_or_insert_source
+from acoustic.data.source import find_or_insert_source
 
 
 @with_database

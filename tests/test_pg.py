@@ -4,8 +4,8 @@
 from nose.tools import *
 from sqlalchemy import sql
 from tests import prepare_database, with_database, TEST_1A_FP_RAW, TEST_1B_FP_RAW, TEST_1C_FP_RAW, TEST_1D_FP_RAW, TEST_2_FP_RAW
-from acoustid import const
-from acoustid.data.fingerprint import insert_fingerprint
+from acoustic import const
+from acoustic.data.fingerprint import insert_fingerprint
 
 
 @with_database

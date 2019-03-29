@@ -17,9 +17,9 @@ from tests import (
     TEST_2_FP_RAW,
     TEST_2_LENGTH,
 )
-from acoustid import tables, const
-from acoustid.data.meta import insert_meta
-from acoustid.data.submission import insert_submission, import_submission, import_queued_submissions
+from acoustic import tables, const
+from acoustic.data.meta import insert_meta
+from acoustic.data.submission import insert_submission, import_submission, import_queued_submissions
 
 
 @with_database

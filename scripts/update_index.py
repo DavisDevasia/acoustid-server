@@ -7,8 +7,8 @@ import os
 import sys
 sys.path.append(os.getcwd())
 from contextlib import closing
-from acoustid.script import run_script
-from acoustid.data.fingerprint import update_fingerprint_index
+from acoustic.script import run_script
+from acoustic.data.fingerprint import update_fingerprint_index
 
 
 def main(script, opts, args):

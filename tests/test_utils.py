@@ -2,7 +2,7 @@
 # Distributed under the MIT license, see the LICENSE file for details.
 
 from nose.tools import *
-from acoustid.utils import singular, is_uuid, provider, is_foreignid
+from acoustic.utils import singular, is_uuid, provider, is_foreignid
 
 
 def test_singular():

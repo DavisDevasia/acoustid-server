@@ -4,7 +4,7 @@
 from nose.tools import *
 import gzip
 from cStringIO import StringIO
-from acoustid.server import GzipRequestMiddleware
+from acoustic.server import GzipRequestMiddleware
 
 
 def test_gzip_request_middleware():

@@ -12,9 +12,9 @@ import os
 import sys
 sys.path.append(os.getcwd())
 from sqlalchemy import sql, orm
-from acoustid.db import DatabaseContext
-from acoustid.models import Application, Track, TrackMBID, TrackMBIDSource, TrackMBIDChange, Source, Account
-from acoustid.script import run_script
+from acoustic.db import DatabaseContext
+from acoustic.models import Application, Track, TrackMBID, TrackMBIDSource, TrackMBIDChange, Source, Account
+from acoustic.script import run_script
 from mbdata.models import Recording
 
 SK_ID = 342

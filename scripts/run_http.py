@@ -5,7 +5,7 @@ import sys
 sys.path.append(os.getcwd())
 import logging
 from werkzeug.serving import run_simple
-from acoustid.server import make_application
+from acoustic.server import make_application
 
 logging.basicConfig(level=logging.DEBUG)
 

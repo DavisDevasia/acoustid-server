@@ -19,14 +19,14 @@ from tests import (
     TEST_2_FP_RAW,
     TEST_2_LENGTH,
 )
-from acoustid.data.track import (
+from acoustic.data.track import (
     merge_missing_mbids, insert_track, merge_tracks,
     merge_mbids,
     calculate_fingerprint_similarity_matrix,
     can_merge_tracks,
     can_add_fp_to_track,
 )
-from acoustid.data.submission import insert_submission
+from acoustic.data.submission import insert_submission
 
 
 @with_database

@@ -3,7 +3,7 @@
 
 from nose.tools import *
 from tests import prepare_database, with_database
-from acoustid.data.application import lookup_application_id_by_apikey
+from acoustic.data.application import lookup_application_id_by_apikey
 
 
 @with_database

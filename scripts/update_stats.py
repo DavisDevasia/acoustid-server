@@ -6,8 +6,8 @@
 import os
 import sys
 sys.path.append(os.getcwd())
-from acoustid.script import run_script
-from acoustid import tables
+from acoustic.script import run_script
+from acoustic import tables
 
 
 QUERIES = [

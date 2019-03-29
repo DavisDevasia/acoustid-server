@@ -3,7 +3,7 @@
 
 from nose.tools import *
 from tests import prepare_database, with_database
-from acoustid.data.stats import (
+from acoustic.data.stats import (
     find_current_stats,
 )
 

@@ -15,9 +15,9 @@ from tests import (prepare_database, with_database, assert_json_equals,
 from werkzeug.wrappers import Request
 from werkzeug.test import EnvironBuilder
 from werkzeug.datastructures import MultiDict
-from acoustid import tables
-from acoustid.api import errors
-from acoustid.api.v1 import (
+from acoustic import tables
+from acoustic.api import errors
+from acoustic.api.v1 import (
     LookupHandler,
     LookupHandlerParams,
     SubmitHandler,

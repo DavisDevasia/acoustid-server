@@ -3,7 +3,7 @@
 
 from nose.tools import *
 from tests import prepare_database, with_database, assert_json_equals
-from acoustid.api import serialize_response
+from acoustic.api import serialize_response
 
 
 def test_serialize_json():

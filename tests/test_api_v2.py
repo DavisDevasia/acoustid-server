@@ -16,9 +16,9 @@ from tests import (prepare_database, with_database, assert_json_equals,
 from werkzeug.wrappers import Request
 from werkzeug.test import EnvironBuilder
 from werkzeug.datastructures import MultiDict
-from acoustid import tables
-from acoustid.api import errors
-from acoustid.api.v2 import (
+from acoustic import tables
+from acoustic.api import errors
+from acoustic.api.v2 import (
     LookupHandler,
     LookupHandlerParams,
     SubmitHandler,
@@ -26,11 +26,11 @@ from acoustid.api.v2 import (
     APIHandler,
     APIHandlerParams,
 )
-from acoustid.api.v2.misc import (
+from acoustic.api.v2.misc import (
     UserCreateAnonymousHandler,
     UserLookupHandler,
 )
-from acoustid.utils import provider
+from acoustic.utils import provider
 
 def test_ok():
     handler = APIHandler()

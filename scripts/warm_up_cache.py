@@ -8,10 +8,10 @@ import random
 import os
 import sys
 sys.path.append(os.getcwd())
-from acoustid.script import run_script
-from acoustid.data.fingerprint import FingerprintSearcher
-from acoustid.data.track import lookup_mbids
-from acoustid.data.musicbrainz import lookup_metadata
+from acoustic.script import run_script
+from acoustic.data.fingerprint import FingerprintSearcher
+from acoustic.data.track import lookup_mbids
+from acoustic.data.musicbrainz import lookup_metadata
 
 
 def main(script, opts, args):

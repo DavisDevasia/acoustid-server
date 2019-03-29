@@ -17,8 +17,8 @@ from bz2 import BZ2File
 from xml.sax._exceptions import SAXParseException
 from xml.sax.xmlreader import InputSource
 
-from acoustid.xml.digester import Digester
-from acoustid.script import run_script
+from acoustic.xml.digester import Digester
+from acoustic.script import run_script
 
 
 logger = logging.getLogger(__name__)

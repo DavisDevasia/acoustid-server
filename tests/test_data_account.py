@@ -3,7 +3,7 @@
 
 from nose.tools import *
 from tests import prepare_database, with_database
-from acoustid.data.account import (
+from acoustic.data.account import (
     lookup_account_id_by_apikey,
     get_account_details,
     reset_account_apikey,

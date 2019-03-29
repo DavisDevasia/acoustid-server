@@ -6,8 +6,8 @@
 import os
 import sys
 sys.path.append(os.getcwd())
-from acoustid.script import run_script
-from acoustid.data.track import merge_missing_mbids
+from acoustic.script import run_script
+from acoustic.data.track import merge_missing_mbids
 
 
 def main(script, opts, args):

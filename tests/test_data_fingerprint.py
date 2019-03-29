@@ -3,7 +3,7 @@
 
 from nose.tools import *
 from tests import prepare_database, with_database
-from acoustid.data.fingerprint import insert_fingerprint
+from acoustic.data.fingerprint import insert_fingerprint
 
 
 @with_database

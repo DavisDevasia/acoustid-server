@@ -9,9 +9,9 @@ import alembic
 import alembic.config
 import sqlalchemy
 import sqlalchemy.orm
-from acoustid.tables import metadata
-from acoustid.script import run_script
-from acoustid.sample_data import create_sample_data
+from acoustic.tables import metadata
+from acoustic.script import run_script
+from acoustic.sample_data import create_sample_data
 from mbdata.sample_data import create_sample_data as create_sample_musicbrainz_data
 
 

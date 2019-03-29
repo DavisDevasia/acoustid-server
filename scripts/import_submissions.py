@@ -10,9 +10,9 @@ import json
 import logging
 import time
 from contextlib import closing
-from acoustid.script import run_script
-from acoustid.data.submission import import_queued_submissions
-from acoustid.data.fingerprint import update_fingerprint_index
+from acoustic.script import run_script
+from acoustic.data.submission import import_queued_submissions
+from acoustic.data.fingerprint import update_fingerprint_index
 
 logger = logging.getLogger(__file__)
 

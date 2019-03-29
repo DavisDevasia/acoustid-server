@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from sqlalchemy.schema import CreateIndex, DropIndex, AddConstraint, DropConstraint, CreateTable, DropTable
-from acoustid.script import run_script
+from acoustic.script import run_script
 
 def dump_ddl(items, name, func, engine):
     with open('sql/{}.sql'.format(name), 'w') as sql:
@@ -10,7 +10,7 @@ def dump_ddl(items, name, func, engine):
 
 
 def main(script, opts, args):
-    from acoustid.tables import metadata
+    from acoustic.tables import metadata
 
     indexes = []
     for table in metadata.tables.values():
