@@ -72,15 +72,15 @@ def main(script, opts, args):
         insert = tables.stats.insert()
         for name, query in QUERIES:
             value = db.execute(query).scalar()
-            db.execute(insert.values({'name': name, 'value': value}))
+            db.execute(insert.values({'name': name, 'value': value if value else 0}))
 
         for i, value in get_track_count_stats(db, MBID_TRACK_QUERY):
             name = 'mbid.%dtracks' % i
-            db.execute(insert.values({'name': name, 'value': value}))
+            db.execute(insert.values({'name': name, 'value': value if value else 0}))
 
         for i, value in get_track_count_stats(db, TRACK_MBID_QUERY):
             name = 'track.%dmbids' % i
-            db.execute(insert.values({'name': name, 'value': value}))
+            db.execute(insert.values({'name': name, 'value': value if value else 0}))
 
 
 run_script(main)
