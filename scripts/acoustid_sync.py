@@ -221,7 +221,11 @@ def main(script, opts, args):
         with closing(cursor):
             cursor.execute('''SELECT current_schema_sequence,
                            current_replication_sequence FROM replication_control''')
-            schema_seq, replication_seq = cursor.fetchone()
+            try:
+                schema_seq, replication_seq = cursor.fetchone()
+            except Exception:
+                schema_seq = 0
+                replication_seq= 0
             conn.connection.commit()
 
         ictx = {
