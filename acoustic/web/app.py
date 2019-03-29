@@ -20,7 +20,7 @@ script.setup_logging()
 
 config = script.config
 
-app = Flask('acoustid.web')
+app = Flask('acoustic.web')
 app.config.update(
     DEBUG=config.website.debug,
     SECRET_KEY=config.website.secret,
