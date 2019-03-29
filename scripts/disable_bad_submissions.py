@@ -8,6 +8,9 @@ import re
 import datetime
 import logging
 import random
+import os
+import sys
+sys.path.append(os.getcwd())
 from sqlalchemy import sql, orm
 from acoustid.db import DatabaseContext
 from acoustid.models import Application, Track, TrackMBID, TrackMBIDSource, TrackMBIDChange, Source, Account

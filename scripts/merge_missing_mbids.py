@@ -3,6 +3,9 @@
 # Copyright (C) 2011 Lukas Lalinsky
 # Distributed under the MIT license, see the LICENSE file for details.
 
+import os
+import sys
+sys.path.append(os.getcwd())
 from acoustid.script import run_script
 from acoustid.data.track import merge_missing_mbids
 

@@ -3,7 +3,6 @@ from __future__ import with_statement
 import os
 import sys
 sys.path.append(os.getcwd())
-print os.getcwd()
 from logging.config import fileConfig
 
 from alembic import context

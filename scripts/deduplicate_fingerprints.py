@@ -4,6 +4,9 @@
 # Distributed under the MIT license, see the LICENSE file for details.
 
 import chromaprint
+import os
+import sys
+sys.path.append(os.getcwd())
 from acoustid.script import run_script
 from acoustid.data.track import find_duplicates
 from acoustid.data.fingerprint import FingerprintSearcher

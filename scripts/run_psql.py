@@ -3,8 +3,10 @@
 # Copyright (C) 2011 Lukas Lalinsky
 # Distributed under the MIT license, see the LICENSE file for details.
 
-from acoustid.script import run_script
 import os
+import sys
+sys.path.append(os.getcwd())
+from acoustid.script import run_script
 
 
 def main(script, opts, args):

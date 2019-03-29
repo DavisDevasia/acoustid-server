@@ -3,6 +3,9 @@
 # Copyright (C) 2011-2012 Lukas Lalinsky
 # Distributed under the MIT license, see the LICENSE file for details.
 
+import os
+import sys
+sys.path.append(os.getcwd())
 from contextlib import closing
 from acoustid.script import run_script
 from acoustid.data.fingerprint import update_fingerprint_index

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 import os
+import sys
+sys.path.append(os.getcwd())
 import logging
 from werkzeug.serving import run_simple
 from acoustid.server import make_application

@@ -3,6 +3,9 @@
 # Copyright (C) 2012-2013 Lukas Lalinsky
 # Distributed under the MIT license, see the LICENSE file for details.
 
+import os
+import sys
+sys.path.append(os.getcwd())
 import json
 import logging
 import time

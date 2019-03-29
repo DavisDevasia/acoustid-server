@@ -3,6 +3,9 @@
 # Copyright (C) 2012 Lukas Lalinsky
 # Distributed under the MIT license, see the LICENSE file for details.
 
+import os
+import sys
+sys.path.append(os.getcwd())
 from acoustid.utils import call_internal_api
 from acoustid.script import run_script
 from acoustid.data.stats import update_user_agent_stats, unpack_user_agent_stats_key

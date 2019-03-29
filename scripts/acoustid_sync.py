@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 from collections import OrderedDict
 import os
+import sys
+sys.path.append(os.getcwd())
 
 import urllib2
 import logging

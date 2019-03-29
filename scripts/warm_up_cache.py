@@ -5,6 +5,9 @@
 
 import time
 import random
+import os
+import sys
+sys.path.append(os.getcwd())
 from acoustid.script import run_script
 from acoustid.data.fingerprint import FingerprintSearcher
 from acoustid.data.track import lookup_mbids

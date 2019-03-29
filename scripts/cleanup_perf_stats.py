@@ -4,6 +4,9 @@
 # Distributed under the MIT license, see the LICENSE file for details.
 
 import datetime
+import os
+import sys
+sys.path.append(os.getcwd())
 from acoustid.script import run_script
 
 
