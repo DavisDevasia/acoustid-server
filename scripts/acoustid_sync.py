@@ -224,8 +224,8 @@ def main(script, opts, args):
             try:
                 schema_seq, replication_seq = cursor.fetchone()
             except Exception:
-                schema_seq = 0
-                replication_seq= 0
+                schema_seq = 1
+                replication_seq = 1
             conn.connection.commit()
 
         ictx = {
