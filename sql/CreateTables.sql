@@ -105,7 +105,7 @@ CREATE TABLE replication_control (
 	last_replication_date TIMESTAMP WITH TIME ZONE
 );
 INSERT INTO replication_control (id, current_schema_sequence, current_replication_sequence, last_replication_date)
-VALUES (1,0,0,'1970-01-01 00:00:00.000000+00');
+VALUES (1,1,1,'1970-01-01 00:00:00.000000+00');
 
 CREATE TABLE source (
 	id SERIAL NOT NULL, 
