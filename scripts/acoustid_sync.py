@@ -23,6 +23,7 @@ from acoustid.script import run_script
 
 logger = logging.getLogger(__name__)
 
+
 class DataImporter(Digester):
     def __init__(self, ictx, file):
         Digester.__init__(self)
@@ -223,9 +224,9 @@ def main(script, opts, args):
                            current_replication_sequence FROM replication_control''')
             try:
                 schema_seq, replication_seq = cursor.fetchone()
-            except Exception:
-                schema_seq = 1
-                replication_seq = 1
+            except Exception as e:
+                print e
+                exit(1)
             conn.connection.commit()
 
         ictx = {
