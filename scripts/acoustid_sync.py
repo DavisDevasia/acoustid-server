@@ -141,6 +141,9 @@ class DataImporter(Digester):
             self.reset()
             self._add_rules()
             self.load()
+        except Exception as e:
+            logger.warning('Exception occurred while trying to recover invalid XML...')
+            logger.warning(e.message)
         finally:
             for f in [originalXML, fixedXML]:
                 if f and not f.closed:
