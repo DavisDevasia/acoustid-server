@@ -213,6 +213,9 @@ def sync(script, ictx):
             except SAXParseException, spe:
                 logger.error('XML data parsing error. %s URL: %s', spe, url)
                 di.recover()
+            except Exception as e:
+                logger.error('Exception occurred while processing saving data')
+                logger.error(e.message)
 
 
 def main(script, opts, args):

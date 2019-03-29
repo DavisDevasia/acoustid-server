@@ -72,7 +72,7 @@ screen -S acoustid_sync -dmL ./run-sync-acoustid.sh
 ```
 
 
-Run crons
+Run crons to verify that no errors are there
 ```bash
 cd ~
 ./acoustid-server/admin/cron/hourly.sh
@@ -87,7 +87,6 @@ Enter the following and save the file
 ```text
 0 * * * * /home/ubuntu/acoustid-server/admin/cron/hourly.sh
 0 0 * * * /home/ubuntu/acoustid-server/admin/cron/daily.sh
-0 0 * * * /home/ubuntu/acoustid-server/admin/run-sync-acoustid.sh
 ```
 Remember to use a random minute and hour to avoid peaks.
 
